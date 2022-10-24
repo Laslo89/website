@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as vars;
+@use '../theme' as *;
+
+
+:root {
+  font-family: vars.$font-main;
+  font-size: 100%;
+  --font-scale-factor: calc(calc(100vw) / (16 / 9));
+  @media(min-aspect-ratio: 16 / 9) {
+    --font-scale-factor: calc(100vh);
+  }
+
+  @include set-theme-vars()
+
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+    <title>Matthias Gohla - WebDev</title>
+  </head>
+  <body>
+    <!-- <header id="header" class="header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__listitem">
+            <a href="#helo" class="navigation__link">Helo</a>
+          </li>
+          <li class="navigation__listitem">
+            <a href="#aboutme" class="navigation__link">About Me</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="navigation__button"> </button>
+    </header> -->
+    <button class="base-button base-button--ghost base-button--icon-only theme-switcher">
+      <span class="base-button__content">
+        <svg class="base-button__icon base-icon base-icon--inline" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.9865 23.3144C18.2427 23.3144 23.3144 18.2427 23.3144 11.9866C23.3144 5.73039 18.2427 0.658752 11.9865 0.658752C5.73037 0.658752 0.658737 5.73039 0.658737 11.9866C0.658737 18.2427 5.73037 23.3144 11.9865 23.3144Z" fill="white"/>
+          <path d="M11.9865 23.3144C18.2427 23.3144 23.3144 18.2427 23.3144 11.9866C23.3144 5.73039 18.2427 0.658752 11.9865 0.658752C5.73037 0.658752 0.658737 5.73039 0.658737 11.9866C0.658737 18.2427 5.73037 23.3144 11.9865 23.3144Z" fill="white"/>
+          <path d="M11.9866 23.8412C5.44988 23.8412 0.131866 18.5232 0.131866 11.9866C0.131866 5.44988 5.44988 0.131866 11.9866 0.131866C18.5232 0.131866 23.8412 5.44988 23.8412 11.9866C23.8412 18.5232 18.5232 23.8412 11.9866 23.8412ZM11.9866 1.18562C6.03102 1.18562 1.18562 6.03102 1.18562 11.9866C1.18562 17.9421 6.03102 22.7875 11.9866 22.7875C17.9421 22.7875 22.7875 17.9421 22.7875 11.9866C22.7875 6.03102 17.9421 1.18562 11.9866 1.18562Z" fill="currentColor"/>
+          <path d="M11.9865 23.3144C5.73044 23.3144 0.658737 18.2427 0.658737 11.9866C0.658737 5.73045 5.73044 0.658752 11.9865 0.658752V23.3144Z" fill="#161621"/>
+        </svg>
+      </span>
+    </button>
+    <main class="main-content">
+      <section id="home" class="home">
+        <div class="home__hero-text-container">
+          <div class="home__headline-container">
+            <h1 class="base-headline base-headline--h1 home__headline">
+              Hello. I am Matthias
+            </h1>
+          </div>
+          <div class="home__hero">
+            <img class="home__hero-image" src="./assets/images/matthias.jpg" alt="matthias">
+          </div>
+          <div class="home__subline-container">
+            <h1 class="base-headline base-headline--h1 home__headline">
+              a Frontend Engineer
+            </h1>
+          </div>
+          <!-- <p class="home__hero-intro">I am Matthias</p> -->
+        </div>
+        <!-- <h1 class="base-headline base-headline--h1 home__headline">
+          I am Matthias
+        </h1> -->
+        <!-- <p class="home__hero-text base-headline base-headline--h1">
+          I am a
+          <span class="base-highlight">
+            <span class="base-highlight__text">
+              creater
+            </span>
+          </span> of things. I am a
+          <span class="base-highlight">
+            <span class="base-highlight__text">
+              solver
+             </span>
+          </span> of Problems. I am a
+          <span class="base-highlight">
+            <span class="base-highlight__text">
+              Spreader
+             </span>
+          </span> of Happyness.
+        </p> -->
+      </section>
+      <section id="journey" class="journey">
+        <div class="journey__text-background">
+          <h2 class="base-headline base-headline--h2 journey__headline">
+            My Passion, My Craft
+          </h2>
+        </div>
+        <div class="journey__text-background">
+          <p class="base-text journey__text">
+            I first started in the good old days<br>
+            when PHP, MySQL and jQuery<br>
+            where state of the art.
+          </p>
+        </div>
+        <div class="journey__skills">
+         <svg class="base-icon journey__skills-css" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5,14v-1H11v0.5h2v-1h-2.5c-0.55,0-1-0.45-1-1V10c0-0.55,0.45-1,1-1h3c0.55,0,1,0.45,1,1v1H13v-0.5h-2v1h2.5 c0.55,0,1,0.45,1,1V14c0,0.55-0.45,1-1,1h-3C9.95,15,9.5,14.55,9.5,14z M17,15h3c0.55,0,1-0.45,1-1v-1.5c0-0.55-0.45-1-1-1h-2.5v-1 h2V11H21v-1c0-0.55-0.45-1-1-1h-3c-0.55,0-1,0.45-1,1v1.5c0,0.55,0.45,1,1,1h2.5v1h-2V13H16v1C16,14.55,16.45,15,17,15z M8,10 c0-0.55-0.45-1-1-1H4c-0.55,0-1,0.45-1,1v4c0,0.55,0.45,1,1,1h3c0.55,0,1-0.45,1-1v-1H6.5v0.5h-2v-3h2V11H8V10z"/>
+          </svg><svg class="base-icon journey__skills-html" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5,9H5v6H3.5v-2.5h-2V15H0V9h1.5v2h2V9z M17.5,9H13c-0.55,0-1,0.45-1,1v5h1.5v-4.5h1V14H16v-3.51h1V15h1.5v-5 C18.5,9.45,18.05,9,17.5,9z M11,9H6v1.5h1.75V15h1.5v-4.5H11V9z M24,15v-1.5h-2.5V9H20v6H24z"/>
+          </svg><svg class="base-icon journey__skills-js" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12,14v-1h1.5v0.5h2v-1H13c-0.55,0-1-0.45-1-1V10c0-0.55,0.45-1,1-1h3c0.55,0,1,0.45,1,1v1h-1.5v-0.5h-2v1H16 c0.55,0,1,0.45,1,1V14c0,0.55-0.45,1-1,1h-3C12.45,15,12,14.55,12,14z M9,9v4.5H7.5v-1H6v1C6,14.33,6.67,15,7.5,15H9 c0.83,0,1.5-0.67,1.5-1.5V9C10.5,9,9.83,9,9,9z"/>
+          </svg><svg class="base-icon journey__skills-heart" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <svg class="base-icon journey__skills-code" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 14V11H24V14H0Z" fill="var(--color-primary)"/>
+<path d="M9.4 16.6L4.8 12L9.4 7.4L8 6L2 12L8 18L9.4 16.6ZM14.6 16.6L19.2 12L14.6 7.4L16 6L22 12L16 18L14.6 16.6V16.6Z" />
+          </svg>
+        </div>
+        <div class="journey__text-background">
+          <p class="base-text journey__text">
+            Since then I have sharpened my tools<br>
+            and created a passion for<br>
+            javascript and web programming
+          </p>
+        </div>
+      </section>
+      <section id="work" class="work">
+        <h2 class="base-headline base-headline--h2 work__headline">
+          My Work
+        </h2>
+        <div class="work__button-background">
+          <p class="base-text work__text">
+            With my Projects I pay attention to a
+            <span class="base-highlight">
+              <span class="base-highlight__text">
+                <strong>
+                  high quality
+                </strong>
+              </span>
+            </span>
+            standard. On the one hand I try to keep the
+            <span class="base-highlight">
+              <span class="base-highlight__text">
+                <strong>
+                  user in mind
+                </strong>
+                </span>
+              </span>,
+            on the other hand I try to guarantee a high level of
+            <span class="base-highlight">
+              <span class="base-highlight__text">
+                <strong>
+                  maintainability
+                </strong>
+              </span>
+            </span>.
+          </p>
+          <button id="button-projects" class="base-button base-button work__button-projects">
+            <span class="base-button__content">
+            Check out Projects
+            </span>
+            <svg class="base-button__icon--right base-icon base-icon--inline" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6H0v5h.01L0 20c0 1.1.9 2 2 2h18v-2H2V6zm5 9h14l-3.5-4.5-2.5 3.01L11.5 9zM22 4h-8l-2-2H6c-1.1 0-1.99.9-1.99 2L4 16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 12H6V4h5.17l1.41 1.41.59.59H22v10z"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section  id="social" class="social">
+        <h2 class="base-headline base-headline--h2 social__headline">
+          <span class="social__headline-left">
+            All for
+          </span>
+          <span class="social__headline-center">
+            One
+          </span>
+          <span class="social__headline-right">
+            for All
+          </span>
+        </h2>
+        <div class="social__text-container">
+          <p class="base-text social__text">
+            I like to get things done through
+            <span class="base-highlight">
+              <span class="base-highlight__text">
+                teamwork
+              </span>
+            </span>.
+            A common goal and the willingness to give your best are the key to joint success.
+          </p>
+        </div>
+        <div class="social__text-container">
+        <p class="base-text social__text">
+          My
+          <span class="base-highlight">
+            <span class="base-highlight__text">
+              team is important
+            </span>
+          </span>
+          to me. I believe that we are constantly learning from each other. Each individual brings wonderful skills and attributes to the table. I also believe in laughter!
+          <span class="base-highlight">
+            <span class="base-highlight__text">
+              Work should be fun
+            </span>
+          </span>.
+
+        </p>
+      </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="base-headline base-headline--h2 contact__headline">
+          Contact
+        </h2>
+        <p class="base-text contact__quote">
+          <q base-text__quote>
+            ...I prefer my coffee black and my code clean...
+          </q><br>
+          <span>
+          <cite class="contact__quote-cite">Matthias Gohla &mdash; Dev kitchen meeting</cite>
+          </span>
+        </p>
+        <div class="contact__platforms">
+          <a href="https://github.com/Laslo89" target="_blank">
+            <svg viewBox="0 0 24 24" class="base-icon" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7188 0.25354C5.24745 0.25354 0 5.53236 0 12.0446C0 17.2541 3.35772 21.6739 8.01406 23.2331C8.59954 23.3422 8.81469 22.9772 8.81469 22.6659C8.81469 22.3848 8.80382 21.4557 8.79878 20.4705C5.53864 21.1838 4.85072 19.0794 4.85072 19.0794C4.31762 17.7165 3.54958 17.3541 3.54958 17.3541C2.48628 16.6223 3.6297 16.6373 3.6297 16.6373C4.8063 16.7205 5.42612 17.8524 5.42612 17.8524C6.47119 19.655 8.16751 19.1338 8.83641 18.8327C8.94156 18.0706 9.24517 17.5502 9.5804 17.2559C6.97733 16.9578 4.24099 15.9467 4.24099 11.4288C4.24099 10.1415 4.69882 9.08957 5.44863 8.2639C5.32699 7.96681 4.9258 6.76754 5.56212 5.14334C5.56212 5.14334 6.54627 4.82654 8.78559 6.35217C9.72046 6.09081 10.7228 5.95983 11.7188 5.95534C12.7146 5.95983 13.718 6.09081 14.6544 6.35217C16.8912 4.82654 17.8738 5.14334 17.8738 5.14334C18.5117 6.76754 18.1105 7.96681 17.989 8.2639C18.7404 9.08957 19.1949 10.1415 19.1949 11.4288C19.1949 15.9575 16.4535 16.9545 13.8439 17.2465C14.2643 17.6125 14.6387 18.3298 14.6387 19.4299C14.6387 21.0077 14.6253 22.2774 14.6253 22.6659C14.6253 22.9797 14.8362 23.3473 15.4302 23.2315C20.084 21.6706 23.4375 17.2524 23.4375 12.0446C23.4375 5.53236 18.1908 0.25354 11.7188 0.25354Z" />
+              <path d="M4.43848 17.1826C4.41268 17.2413 4.32111 17.2587 4.23769 17.2185C4.15253 17.1801 4.105 17.1002 4.13255 17.0415C4.15777 16.9811 4.24933 16.9644 4.33431 17.0046C4.41947 17.0432 4.46797 17.1238 4.43848 17.1826Z" />
+              <path d="M4.91319 17.7153C4.85732 17.7674 4.74791 17.7432 4.67399 17.6608C4.59717 17.5786 4.58301 17.4685 4.63965 17.4158C4.69727 17.3637 4.80319 17.3881 4.87982 17.4703C4.95665 17.5535 4.97158 17.6624 4.91319 17.7153Z" />
+              <path d="M5.3753 18.3943C5.30352 18.4447 5.18596 18.3975 5.1134 18.2926C5.04162 18.1878 5.04162 18.0619 5.11515 18.0116C5.1877 17.9612 5.30352 18.0067 5.37705 18.1105C5.44863 18.2171 5.44863 18.343 5.3753 18.3943Z" />
+              <path d="M6.00831 19.0504C5.9441 19.1216 5.80713 19.1025 5.70703 19.0053C5.6046 18.9102 5.57608 18.7752 5.64049 18.7039C5.70567 18.6327 5.84322 18.6526 5.9441 18.7492C6.04575 18.8441 6.0766 18.9799 6.00831 19.0504Z" />
+              <path d="M6.88149 19.4315C6.85317 19.5238 6.72145 19.5658 6.58875 19.5263C6.45606 19.4859 6.36953 19.3778 6.39611 19.2847C6.42366 19.1916 6.55616 19.1479 6.68963 19.1898C6.82213 19.23 6.90904 19.3374 6.88149 19.4315Z" />
+              <path d="M7.84063 19.5019C7.84392 19.5991 7.7314 19.6799 7.59192 19.6816C7.45205 19.6848 7.33836 19.6061 7.33701 19.5103C7.33701 19.4121 7.447 19.3324 7.58707 19.3299C7.72636 19.3274 7.84063 19.4054 7.84063 19.5019Z" />
+              <path d="M8.73301 19.3492C8.7497 19.4439 8.65289 19.5413 8.51457 19.5672C8.37838 19.5924 8.25267 19.5338 8.23521 19.4398C8.21833 19.3426 8.31689 19.245 8.45268 19.2198C8.5912 19.1956 8.71536 19.2528 8.73301 19.3492Z" />
+            </svg>
+          </a>
+        </div>
+        <dl class="contact__contact-list">
+          <dt>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="base-icon base-icon--inline">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </dt>
+          <dd class="contact__contact-type">
+            <a href="mailto:mail@matthiasgohla.de">
+              mail@matthiasgohla.de
+            </a>
+          </dd>
+          <dt>
+            <svg xmlns="http://www.w3.org/2000/svg" class="base-icon base-icon--inline" viewBox="0 0 24 24">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+          </dt>
+          <dd>
+            <a href="tel:+4915772782951">
+              +49 157 72782951
+            </a>
+          </dd>
+          <dt>
+            <svg xmlns="http://www.w3.org/2000/svg" class="base-icon base-icon--inline" viewBox="0 0 24 24">
+              <path d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z"/>
+            </svg>
+          </dt>
+          <dd>
+            Matthias Gohla<br>
+            Klausener Straße 36<br>
+            90592 Schwarzenbruck
+          </dd>
+          <dt>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="base-icon base-icon--inline">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </dt>
+          <dd>
+            <a href="/privacy" >
+              Privacy
+            </a>
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    <dialog id="dialog" class="base-dialog">
+      <section id="projects" class="projects">
+        <h2 class="projects__headline">
+          Projects
+        </h2>
+        <div id="slider" class="slider">
+        <ul class="slider__slides">
+          <li class="slider__slide projects__project-list-item">
+            <h3 class="projects__project-headline">Squares And Brackets</h3>
+            <img class="projects__project-image" src="./assets/images/project_sqandbr.png" alt="website">
+            <p class="projects__project-date">
+              <time datetime="2017">2017</time>
+            </p>
+            <p class="projects__project-description">
+              Multipage website with complex animations build with anime.js.
+              Visit the project <a class="base-link" href="http://squaresandbrackets.com" target="_blank">here</a>.
+            </p>
+            <p class="projects__project-categories">
+              <span class="base-badge">Fullstack</span>
+              <span class="base-badge">Web</span>
+              <span class="base-badge">Freelance</span>
+            </p>
+            <p class="projects__project-technologies">
+              <span class="base-badge base-badge--highlight">HTML</span>
+              <span class="base-badge base-badge--highlight">JS</span>
+              <span class="base-badge base-badge--highlight">SCSS</span>
+              <span class="base-badge base-badge--highlight">Webpack</span>
+              <span class="base-badge base-badge--highlight">CirbyCMS</span>
+            </p>
+          </li>
+          <li class="slider__slide projects__project-list-item">
+            <h3 class="projects__project-headline">Network Monitoring Software - PRTG</h3>
+            <img class="projects__project-image" src="https://blog.paessler.com/hubfs/2021/Visuals/Headers/Blogheader_New-PRTG-UI.jpg" alt="prtg-ui">
+            <p class="projects__project-date">
+              <time datetime="2018">2018 - ongoing</time>
+            </p>
+            <p class="projects__project-description">
+              A mordern rework of the successful network monitoring software from <a class="base-link" href="https://paessler.com" target="_blank">Paessler</a> - PRTG.
+              As part of the Frontend Team I build a Component driven SPA and connect it with REST Services.
+              The SPA consist of VUE and several parts of its ecosystem, such state management, router and Testing Framework.
+            </p>
+            <p class="projects__project-categories">
+              <span class="base-badge">Frontend</span>
+              <span class="base-badge">Web</span>
+              <span class="base-badge">Employed</span>
+            </p>
+            <p class="projects__project-technologies">
+              <span class="base-badge base-badge--highlight">HTML</span>
+              <span class="base-badge base-badge--highlight">JS</span>
+              <span class="base-badge base-badge--highlight">SCSS</span>
+              <span class="base-badge base-badge--highlight">SPA</span>
+              <span class="base-badge base-badge--highlight">VITE</span>
+              <span class="base-badge base-badge--highlight">VUE3</span>
+              <span class="base-badge base-badge--highlight">Statemanagement</span>
+              <span class="base-badge base-badge--highlight">REST</span>
+            </p>
+          </li>
+          <li class="slider__slide projects__project-list-item">
+            <h3 class="projects__project-headline">Yntro Player</h3>
+            <img class="projects__project-image" src="./assets/images/project_yntro-player.png" alt="website">
+            <p class="projects__project-date">
+              <time datetime="2019">2019 - ongoing</time>
+            </p>
+            <p class="projects__project-description">
+              This Projects makes Instruction Videos great again. A interactive web video player driven by WEB-VTT.
+              Visit the project <a class="base-link" href="http://yntro.video" target="_blank">here</a>.
+            </p>
+            <p class="projects__project-categories">
+              <span class="base-badge">Frontend</span>
+              <span class="base-badge">Web</span>
+              <span class="base-badge">Freelance</span>
+            </p>
+            <p class="projects__project-technologies">
+              <span class="base-badge base-badge--highlight">HTML</span>
+              <span class="base-badge base-badge--highlight">JS</span>
+              <span class="base-badge base-badge--highlight">SCSS</span>
+              <span class="base-badge base-badge--highlight">Webpack</span>
+              <span class="base-badge base-badge--highlight">VUE</span>
+              <span class="base-badge base-badge--highlight">WebVTT</span>
+            </p>
+          </li>
+        </ul>
+        <div class="slider__buttons">
+          <button id="projects-button-prev" class="base-button base-button--ghost base-button--icon-only projects__button-prev">
+            <svg class="base-button__icon base-icon base-icon--inline" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
+            </svg>
+          </button>
+          <button id="projects-button-next" class="base-button base-button--ghost base-button--icon-only projects__button-next">
+            <svg class="base-button__icon base-icon base-icon--inline" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      </section>
+      <button class="base-button base-button--ghost base-button--icon-only base-dialog__button-close" >
+        <span class="base-button__content">
+          <svg class="base-button__icon base-icon base-icon--inline" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+          </svg>
+        </span>
+      </button>
+    </dialog>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

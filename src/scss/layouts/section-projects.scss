@@ -1,0 +1,44 @@
+  @use '../abstracts/variables' as vars;
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: vars.$color-secondary;
+  font-size: 1.2em;
+
+  &__headline{
+    font-size: 1.4em;
+    text-align: center;
+    margin-block-end: 1.8em;
+  }
+
+  &__project-headline {
+    font-size: 1.1em;
+    margin-block-end: 0.5em;
+  }
+
+  &__project-image {
+    width: 100%;
+    margin-bottom: 0.5em;
+    max-height: 480px;
+  }
+
+  &__project-date {
+    font-weight: vars.$fw-medium;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+
+  &__project-description {
+    margin-bottom: 1em;
+  }
+
+  &__project-categories {
+    font-size: 0.7em;
+  }
+
+  &__project-technologies {
+    font-size: 0.7em;
+  }
+}

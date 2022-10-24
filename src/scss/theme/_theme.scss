@@ -1,0 +1,12 @@
+@use 'themes' as themes;
+@use '../abstracts';
+
+@mixin set-theme-vars() {
+  @include abstracts.cssvars(themes.$light);
+
+  .theme-dark {
+    @include abstracts.cssvars(themes.$dark);
+  }
+
+  @include abstracts.cssvars(themes.$base);
+}

@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as vars;
+.base-link {
+  color: vars.$color-secondary;
+  text-decoration: underline;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #{vars.$color-secondary-opacity-high};
+      color: #{vars.$color-primary};
+    }
+  }
+}

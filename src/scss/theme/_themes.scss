@@ -1,0 +1,26 @@
+@use 'colors';
+
+$base: (
+  color-highlight-opacity-high: #{colors.$highlight-opacity-high},
+  color-highlight-opacity-low: #{colors.$highlight-opacity-low},
+);
+
+$dark: (
+  color-primary: #{colors.$dark},
+  color-primary-opacity-high: #{colors.$dark-opacity-high},
+  color-primary-opacity-low: #{colors.$dark-opacity-low},
+  color-secondary: #{colors.$light},
+  color-secondary-opacity-high: #{colors.$light-opacity-high},
+  color-secondary-opacity-low: #{colors.$light-opacity-low},
+  color-highlight: #{colors.$highlight-opacity-low},
+);
+
+$light: (
+  color-primary: #{colors.$light},
+  color-primary-opacity-high: #{colors.$light-opacity-high},
+  color-primary-opacity-low: #{colors.$light-opacity-low},
+  color-secondary: #{colors.$dark},
+  color-secondary-opacity-high: #{colors.$dark-opacity-high},
+  color-secondary-opacity-low: #{colors.$dark-opacity-low},
+  color-highlight: #{colors.$highlight-opacity-high},
+);

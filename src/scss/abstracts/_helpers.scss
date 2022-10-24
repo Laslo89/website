@@ -1,0 +1,5 @@
+@mixin cssvars($css_variables) {
+  @each $name, $value in $css_variables {
+      --#{$name}: #{$value};
+  }
+}

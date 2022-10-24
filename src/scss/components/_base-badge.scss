@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as vars;
+
+.base-badge {
+  padding: 0.1em 0.5em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  line-height: 1.7;
+  word-break: keep-all;
+  font-weight: vars.$fw-medium;
+  background-color: vars.$color-secondary;
+  color: vars.$color-primary;
+
+  &--highlight {
+    background-color: vars.$color-highlight-opacity-low;
+    color: vars.$color-secondary;
+  }
+}
