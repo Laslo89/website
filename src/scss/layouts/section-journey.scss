@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding-inline: 1em;
-  background-image: url('./../../assets/images/passion.jpg');
+  background-image: url('/assets/images/passion.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     color: vars.$color-secondary;
     display: flex;
     justify-content: center;
-    gap: clamp(0.3em, calc(6vw), 1em); //calc(vars.$font-scale-factor * 0.042)
+    gap: clamp(0.3em, calc(6vw), 1em);
     box-shadow: 2px 2px 22px 6px vars.$color-highlight;
   }
 

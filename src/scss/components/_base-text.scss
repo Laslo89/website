@@ -2,6 +2,6 @@
 
 .base-text {
   font-weight: vars.$fw-regular;
-  font-size: clamp(1rem, calc(vars.$font-scale-factor * 0.042), 1.333rem);;
+  font-size: clamp(1rem, calc(vars.$font-scale-factor * 0.042), 1.333rem);
   // font-size: clamp(1.15em, calc(vars.$font-scale-factor * 0.042), 1.8em);
 }
