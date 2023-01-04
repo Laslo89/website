@@ -1,4 +1,4 @@
-const themeSwitcherEl = document.querySelector('.theme-switcher');
+const themeSwitcherEl = document.querySelector('#theme-switcher');
 
 export function useDarkTheme() {
   document.body.classList.add('theme-dark');

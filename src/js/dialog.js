@@ -11,6 +11,7 @@ export class Dialog {
       this.close()
       document.removeEventListener('click',this.handleClickOutside)
     }
+
     this.closeButton.addEventListener('click', this.handleCloseButtonClick)
 
     this.handleClickOutside = ({ clientX, clientY }) => {
@@ -92,10 +93,20 @@ export class Dialog {
   }
 }
 
-export function registerDialogListener(id) {
-  const dialog = new Dialog(id)
-  const buttonEl = document.querySelector('#button-projects')
-  buttonEl.addEventListener('click', function(event) {
-    dialog.open()
-  })
+
+/**
+ * @typedef {Array<String, Function>}  IdHandlerPair
+ */
+/**
+ * @param {String} dialogId - identifier of dialog element
+ * @param {IdHandlerPair[]} IdHandlerPairs - identifier of dialog trigger elements
+ */
+export function registerDialogListener(dialogId, ...idHandlerPairs) {
+  const dialog = new Dialog(dialogId);
+  idHandlerPairs.forEach(
+    ([identifier, handler]) => {
+      const el = document.querySelector(identifier)
+      el.addEventListener('click', () => handler(dialog))
+    }
+  )
 }

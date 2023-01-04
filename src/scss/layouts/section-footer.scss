@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as vars;
+
+.footer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 1rem;
+  gap: 2%;
+  background-color: vars.$color-primary;
+  color: vars.$color-secondary;
+
+  &__claim {
+    font-size: 1.2em;
+  }
+}

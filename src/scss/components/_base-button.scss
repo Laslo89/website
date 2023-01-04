@@ -61,6 +61,15 @@
     --button-border-width: 0;
   }
 
+  &--disabled {
+    --button-background: #{vars.$color-secondary};
+    --button-text-color: #{vars.$color-primary};
+
+    opacity: 0.1;
+    pointer-events: none;
+    cursor: default;
+  }
+
   &__content {
     display: inline-flex;
     align-items: center;

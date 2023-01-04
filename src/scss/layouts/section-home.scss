@@ -9,6 +9,17 @@
   justify-content: center;
   gap: clamp(8%, 12vw, 13%);
   background-color: vars.$color-primary;
+  z-index: 0;
+
+  &__background {
+    height: clamp(200px, 25vw, 350px);
+    width: 100%;
+    background-image: url('/assets/images/code.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__hero-text-container {
     height: clamp(200px, 25vw, 350px);
@@ -18,11 +29,7 @@
     justify-content: center;
     align-items: center;
     border-block: 2px solid vars.$color-secondary;
-    background-image: url('/assets/images/code.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     position: relative;
   }
 

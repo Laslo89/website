@@ -1,22 +1,23 @@
 @use '../abstracts/variables' as vars;
 
 .contact {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items:center;
-  justify-content: center;
-  gap: 8%;
-  background: linear-gradient(180deg, vars.$color-primary 60%, vars.$color-highlight 100%);
+  padding-block: 8%;
+  gap: 3rem;
 
   &__headline {
-    margin-top: 10%;
+    margin-block-start: 25%;
+    margin-block-end: 6%;
   }
 
   &__platforms {
     display: flex;
     justify-content: center;
     font-size: 3em;
+    margin-block-end: 3%;
   }
 
   &__contact-list {

@@ -31,29 +31,32 @@ export class Slider {
    * @type { Function<AnimationEvent> } - animation end event handler for enter and leave animations
    */
   handleAnimationEnd = (event) => {
-    if(event.animationName.includes('in')) {
-      event.target.style.visibility = 'visible'
+    if (event.animationName.includes("in")) {
+      event.target.style.visibility = "visible"
+      this.changing = false
     }
-    if(event.animationName.includes('out')) {
+    if (event.animationName.includes("out")) {
       event.target.style.visibility = null
     }
     event.target.classList.remove(`slider--${event.animationName}`)
   }
 
   constructor() {
-    const slides = document.querySelectorAll('.projects__project-list-item')
+    const slides = document.querySelectorAll(".projects__project-list-item")
+    this.changing = false
     this.slides = Array.from(slides)
-    this.buttonPrev = document.querySelector('.projects__button-prev')
-    this.buttonNext = document.querySelector('.projects__button-next')
-    this.buttonPrev.addEventListener('click', this.prevSlideHandler)
-    this.buttonNext.addEventListener('click', this.nextSlideHandler)
+    this.buttonPrev = document.querySelector(".projects__button-prev")
+    this.buttonNext = document.querySelector(".projects__button-next")
+    this.buttonPrev.addEventListener("click", this.prevSlideHandler)
+    this.buttonNext.addEventListener("click", this.nextSlideHandler)
+    this.#disableButton(this.buttonPrev)
 
-    this.slides.forEach(
-      (slide, index) => {
+
+    this.slides.forEach((slide, index) => {
       if (index === this.#currentSlideIndex) {
-        slide.style.visibility = 'visible'
+        slide.style.visibility = "visible"
       }
-      slide.addEventListener('animationend', this.handleAnimationEnd)
+      slide.addEventListener("animationend", this.handleAnimationEnd)
     })
   }
 
@@ -70,17 +73,22 @@ export class Slider {
     const lastSlideIndex = this.slides.length - 1
     const firstSlideIndex = 0
 
-    if (nextSlideIndex > lastSlideIndex || nextSlideIndex < firstSlideIndex) {
+    if (
+      this.changing === true ||
+      nextSlideIndex > lastSlideIndex ||
+      nextSlideIndex < firstSlideIndex
+    ) {
       return
     }
     if (nextSlideIndex === lastSlideIndex) {
-      console.log('last index');
-      // set next button to disabled
+      this.#disableButton(this.buttonNext)
+    } else if (nextSlideIndex === firstSlideIndex) {
+      this.#disableButton(this.buttonPrev);
+    } else {
+      this.#enableButton(this.buttonPrev)
+      this.#enableButton(this.buttonNext)
     }
-    if (nextSlideIndex === firstSlideIndex) {
-      console.log('first index');
-      // set prev button to disabled
-    }
+    this.changing = true;
     this.currentSlideIndex = nextSlideIndex
   }
 
@@ -93,8 +101,8 @@ export class Slider {
     const currentSlide = this.slides[oldIndex]
     const nextSlide = this.slides[nextIndex]
     const direction = this.#getDirection(nextIndex, oldIndex)
-    const leaveAnimationClass = this.#getAnimationClass('leave', direction)
-    const enterAnimationClass = this.#getAnimationClass('enter', direction)
+    const leaveAnimationClass = this.#getAnimationClass("leave", direction)
+    const enterAnimationClass = this.#getAnimationClass("enter", direction)
     currentSlide.classList.add(leaveAnimationClass)
     nextSlide.classList.add(enterAnimationClass)
   }
@@ -106,10 +114,10 @@ export class Slider {
    * @returns {'left' | 'right'}
    */
   #getDirection(indexA, indexB) {
-    if(indexA > indexB) {
-      return 'left'
+    if (indexA > indexB) {
+      return "left"
     }
-    return 'right'
+    return "right"
   }
 
   /**
@@ -117,20 +125,36 @@ export class Slider {
    * @param {'leave' | 'enter'} type
    * @param {'left' | 'right'} direction
    */
-  #getAnimationClass(type = 'enter', direction) {
-    if (type === 'leave') {
+  #getAnimationClass(type = "enter", direction) {
+    if (type === "leave") {
       return `slider--slide-out-${direction}`
     }
     return `slider--slide-in-${direction}`
   }
 
+  /**
+   * sets disabled style on button element
+   * @param {HTMLElement} button
+   */
+  #disableButton(button) {
+    button.classList.add("base-button--disabled")
+  }
+
+  /**
+   * removes disabled style on button element
+   * @param {HTMLElement} button
+   */
+  #enableButton(button) {
+    button.classList.remove("base-button--disabled")
+  }
+
   destroy() {
-    this.buttonPrev.addEventListener('click', this.prevSlideHandler)
-    this.buttonNext.addEventListener('click', this.nextSlideHandler)
-    this.slides.forEach(
-      (slide, index) => {
+    this.buttonPrev.removeEventListener("click", this.prevSlideHandler)
+    this.buttonNext.removeEventListener("click", this.nextSlideHandler)
+    this.#enableButton(this.buttonNext)
+    this.slides.forEach((slide, index) => {
       slide.style.visibility = null
-      slide.removeEventListener('animationend', this.handleAnimationEnd)
+      slide.removeEventListener("animationend", this.handleAnimationEnd)
     })
   }
 }

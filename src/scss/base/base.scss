@@ -10,6 +10,13 @@
     --font-scale-factor: calc(100vh);
   }
 
-  @include set-theme-vars()
+  @include set-theme-vars();
 
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
 }
