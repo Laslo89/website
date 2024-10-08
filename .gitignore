@@ -1,23 +1,33 @@
-# Logs
-logs
-*.log
+# Node-Module
+node_modules/
+
+# Output-Ordner
+dist/
+
+# Vite Cache
+.vite/
+
+# Log-Dateien
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist-ssr
-*.local
+# Lokale Umgebungsdateien
+.env
+.env.local
+.env.*.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# MacOS-spezifische Dateien
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# VSCode spezifische Dateien
+.vscode/
+
+# Temporäre Dateien (Betriebssystem)
+Thumbs.db
+.DS_Store
+
+# IDE-spezifische Dateien
+.idea/
+*.iml
