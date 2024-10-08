@@ -39,19 +39,12 @@
     background-color: red;
   }
 
-  // &__hero-text {
-  //   font-size: 64px;
-  //   width: 100%;
-  // }
-
-
   &__headline-container {
     position: absolute;
     top: -2rem;
     padding: 0.5rem;
     background-color: vars.$color-secondary;
     color: vars.$color-primary;
-    // margin-right: clamp(120px, calc(20vw), 270px);
   }
 
   &__subline-container {
@@ -60,10 +53,6 @@
     background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: 0.5rem;
-    // margin-right: clamp(120px, calc(20vw), 270px);
-  }
-  &__headline {
-    // margin-right: clamp(120px, calc(20vw), 270px);
   }
 
   &__hero {
