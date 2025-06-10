@@ -4,7 +4,6 @@ Hi this is my personal Website source code. It is not finished yet and needs som
 
 ## Todos
 
-- create a favicon
 - reduce image size
 - maybe use lazy loading
 - add more projects
